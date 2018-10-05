@@ -2,21 +2,21 @@ from flask import Flask, url_for, render_template
 
 app = Flask(__name__)
 
-@app.route("/")
-def render_main():
-    return render_template('home.html')
+@app.route("/index")
+def render_index():
+    return render_template('index.html')
 
-@app.route("/page1")
-def render_page1():
-    return render_template('page1.html')
+@app.route("/heatsink")
+def render_heatsink():
+    return render_template('heatsink.html')
 
-@app.route("/p2")
-def render_page2():
-    return render_template('page2.html')
+@app.route("/motherboard")
+def render_motherboard():
+    return render_template('motherboard.html')
 
-@app.route("/p3")
-def render_page3():
-    return render_template('page3.html')
+@app.route("cpu")
+def render_cpu():
+    return render_template('cpu.html')
     
 if __name__=="__main__":
     app.run(debug=False, port=54321)
