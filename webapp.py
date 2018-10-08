@@ -10,13 +10,5 @@ def render_index():
 def render_heatsink():
     return render_template('heatsink.html')
 
-@app.route("/motherboard")
-def render_motherboard():
-    return render_template('motherboard.html')
-
-@app.route("cpu")
-def render_cpu():
-    return render_template('cpu.html')
-    
 if __name__=="__main__":
     app.run(debug=False, port=54321)
