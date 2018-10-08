@@ -5,6 +5,9 @@ app = Flask(__name__)
 @app.route("/")
 def render_index():
     return render_template('index.html')
+@app.route("/floppy")
+def render_floppy():
+    return render_template('floppy.html')
 
 @app.route("/heatsink")
 def render_heatsink():
