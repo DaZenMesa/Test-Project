@@ -37,5 +37,9 @@ def render_ram():
 def render_systemfan():
     return render_template('systemfan.html')
 
+@app.route("/cpu")
+def render_cpu():
+    return render_template('cpu.html')
+
 if __name__=="__main__":
     app.run(debug=False, port=54321)
